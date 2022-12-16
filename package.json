@@ -1,0 +1,10 @@
+{
+  "devDependencies": {},
+  "name": "calcular-imc",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/cristian-sbardelotto/calculo-do-imc.git",
+  "author": "Cristian Sbardelotto",
+  "license": "MIT",
+  "dependencies": {}
+}
