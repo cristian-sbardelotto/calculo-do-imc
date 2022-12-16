@@ -1,3 +1,8 @@
+$white:hsl(0, 0%, 100%);
+$blue:hsl(204, 64%, 44%);
+$dark-gray:hsl(0, 0%, 20%);
+$light-gray:hsl(0, 0%, 80%);
+
 @mixin reset {
   font-size: 62.5%;
   padding: 0;
@@ -5,7 +10,7 @@
 }
 
 @mixin animatedBackground {
-  background: #2980b9
+  background: $blue
     url('https://static.tumblr.com/03fbbc566b081016810402488936fbae/pqpk3dn/MRSmlzpj3/tumblr_static_bg3.png')
     repeat 0 0;
   -webkit-animation: 10s linear 0s normal none infinite animate;
@@ -80,21 +85,21 @@ body {
   h1 {
     font-size: 6rem;
 
-    color: #ccc;
+    color: $light-gray;
   }
 
   main {
-    background-color: #333;
-    color: #fff;
+    background-color: $dark-gray;
+    color: $white;
     padding: 5rem 15rem;
     border-radius: 1rem;
     text-align: center;
 
     .button {
       font-size: 2.5rem;
-      background-color: #2980b9;
-      color: #ccc;
-      border: 2px solid #2980b9;
+      background-color: $blue;
+      color: $light-gray;
+      border: 2px solid $blue;
       padding: 0.5rem 6rem;
       border-radius: 2rem;
 
@@ -103,9 +108,9 @@ body {
       &:hover {
         cursor: pointer;
         background-color: transparent;
-        border-color: #ccc;
-        color: #fff;
-        box-shadow: rgb(23, 23, 23) 0px 20px 30px -10px;
+        border-color: $light-gray;
+        color: $white;
+        box-shadow: hsl(0, 0%, 9%) 0px 20px 30px -10px;
       }
     }
 
@@ -128,15 +133,15 @@ body {
       input {
         outline: none;
         border-radius: 2rem;
-        border: 3px solid #ccc;
-        background-color: #ccc;
+        border: 3px solid $light-gray;
+        background-color: $light-gray;
         padding-left: 1rem;
         height: 2.5rem;
 
         transition: 0.1s all ease;
         &:focus {
-          box-shadow: rgba(43, 99, 167, 0.481) 0px 5px 15px;
-          border-color: #2980b9;
+          box-shadow: hsla(213, 59%, 41%, 0.481) 0px 5px 15px;
+          border-color: $blue;
         }
 
         &[type='number']::-webkit-inner-spin-button,
