@@ -42,6 +42,23 @@ body main {
   color: #fff;
   padding: 5rem 15rem;
   border-radius: 1rem;
+  text-align: center;
+}
+body main .button {
+  font-size: 2.5rem;
+  background-color: #2980b9;
+  color: #ccc;
+  border: 2px solid #2980b9;
+  padding: 0.5rem 6rem;
+  border-radius: 2rem;
+  transition: 0.2s all ease;
+}
+body main .button:hover {
+  cursor: pointer;
+  background-color: transparent;
+  border-color: #ccc;
+  color: #fff;
+  box-shadow: rgb(23, 23, 23) 0px 20px 30px -10px;
 }
 body main form {
   font-size: 4rem;
@@ -72,21 +89,6 @@ body main form input:focus {
 }
 body main form input[type=number]::-webkit-inner-spin-button, body main form input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
-}
-body main form button {
-  background-color: #2980b9;
-  color: #ccc;
-  border: 2px solid #2980b9;
-  padding: 0.5rem 6rem;
-  border-radius: 2rem;
-  transition: 0.2s all ease;
-}
-body main form button:hover {
-  cursor: pointer;
-  background-color: transparent;
-  border-color: #ccc;
-  color: #fff;
-  box-shadow: rgb(23, 23, 23) 0px 20px 30px -10px;
 }
 body main p {
   margin-top: 7rem;

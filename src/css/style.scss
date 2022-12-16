@@ -88,6 +88,26 @@ body {
     color: #fff;
     padding: 5rem 15rem;
     border-radius: 1rem;
+    text-align: center;
+
+    .button {
+      font-size: 2.5rem;
+      background-color: #2980b9;
+      color: #ccc;
+      border: 2px solid #2980b9;
+      padding: 0.5rem 6rem;
+      border-radius: 2rem;
+
+      transition: 0.2s all ease;
+
+      &:hover {
+        cursor: pointer;
+        background-color: transparent;
+        border-color: #ccc;
+        color: #fff;
+        box-shadow: rgb(23, 23, 23) 0px 20px 30px -10px;
+      }
+    }
 
     form {
       font-size: 4rem;
@@ -113,7 +133,7 @@ body {
         padding-left: 1rem;
         height: 2.5rem;
 
-        transition: .1s all ease;
+        transition: 0.1s all ease;
         &:focus {
           box-shadow: rgba(43, 99, 167, 0.481) 0px 5px 15px;
           border-color: #2980b9;
@@ -122,25 +142,6 @@ body {
         &[type='number']::-webkit-inner-spin-button,
         &[type='number']::-webkit-outer-spin-button {
           -webkit-appearance: none;
-        }
-      }
-
-      button {
-        background-color: #2980b9;
-        color: #ccc;
-        border: 2px solid #2980b9;
-        padding: .5rem 6rem;
-        border-radius: 2rem;
-        
-        transition: .2s all ease;
-        
-        &:hover {
-          cursor: pointer;
-          background-color: transparent;
-          border-color: #ccc;
-          color: #fff;
-          box-shadow: rgb(23, 23, 23) 0px 20px 30px -10px;
-
         }
       }
     }
