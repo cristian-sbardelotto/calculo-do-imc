@@ -12,22 +12,27 @@
 <body>
   <h1>Calcule seu IMC</h1>
   <main>
-    <form action="">
-      <label for="name-input">Digite seu nome</label>
-      <input type="text" id="name-input" />
+    <form>
+      <div class="groups name-group">
+        <label for="name-input">Digite seu nome</label>
+        <input type="text" id="name-input" placeholder="Exemplo: Fulano" />
+      </div>
 
-      <label for="height-input">Digite sua altura</label>
-      <input type="number" id="height-input" />
-      <span>KGs</span>
+      <div class="groups height-group">
+        <label for="height-input">Digite sua altura</label>
+        <input type="number" id="height-input" placeholder="Exemplo: 1.75" />
+      </div>
 
-      <label for="weight-input">Digite seu peso</label>
-      <input type="number" id="weight-input" />
+      <div class="groups weight-group">
+        <label for="weight-input">Digite seu peso</label>
+        <input type="number" id="weight-input" placeholder="Exemplo: 68" />
+      </div>
 
       <button id="calc-button">Calcular</button>
     </form>
 
     <p class="result">
-      Fazendo o cálculo...
+      Preencha todos os campos acima!
     </p>
   </main>
 

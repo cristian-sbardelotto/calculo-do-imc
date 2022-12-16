@@ -1,1 +1,94 @@
-/*# sourceMappingURL=style.css.map */
+* {
+  font-size: 62.5%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #2980b9 url("https://static.tumblr.com/03fbbc566b081016810402488936fbae/pqpk3dn/MRSmlzpj3/tumblr_static_bg3.png") repeat 0 0;
+  -webkit-animation: 10s linear 0s normal none infinite animate;
+  animation: 10s linear 0s normal none infinite animate;
+  height: 100vh;
+  width: 100vw;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+@-webkit-keyframes animate {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 500px 0;
+  }
+}
+@keyframes animate {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 500px 0;
+  }
+}
+body h1 {
+  font-size: 6rem;
+  color: #ccc;
+}
+body main {
+  background-color: #333;
+  color: #fff;
+  padding: 5rem 15rem;
+  border-radius: 1rem;
+}
+body main form {
+  font-size: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+}
+body main form .groups {
+  position: relative;
+}
+body main form .groups label {
+  position: absolute;
+  bottom: 3.7rem;
+}
+body main form input {
+  outline: none;
+  border-radius: 2rem;
+  border: 3px solid #ccc;
+  background-color: #ccc;
+  padding-left: 1rem;
+  height: 2.5rem;
+  transition: 0.1s all ease;
+}
+body main form input:focus {
+  box-shadow: rgba(43, 99, 167, 0.481) 0px 5px 15px;
+  border-color: #2980b9;
+}
+body main form input[type=number]::-webkit-inner-spin-button, body main form input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+body main form button {
+  background-color: #2980b9;
+  color: #ccc;
+  border: 2px solid #2980b9;
+  padding: 0.5rem 6rem;
+  border-radius: 2rem;
+  transition: 0.2s all ease;
+}
+body main form button:hover {
+  cursor: pointer;
+  background-color: transparent;
+  border-color: #ccc;
+  color: #fff;
+  box-shadow: rgb(23, 23, 23) 0px 20px 30px -10px;
+}
+body main p {
+  margin-top: 7rem;
+  font-size: 3rem;
+}/*# sourceMappingURL=style.css.map */
