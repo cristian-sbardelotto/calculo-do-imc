@@ -5,7 +5,9 @@
 }
 
 body {
-  background: #2980b9 url("https://static.tumblr.com/03fbbc566b081016810402488936fbae/pqpk3dn/MRSmlzpj3/tumblr_static_bg3.png") repeat 0 0;
+  background: #2980b9
+    url('https://static.tumblr.com/03fbbc566b081016810402488936fbae/pqpk3dn/MRSmlzpj3/tumblr_static_bg3.png')
+    repeat 0 0;
   -webkit-animation: 10s linear 0s normal none infinite animate;
   animation: 10s linear 0s normal none infinite animate;
   height: 100vh;
@@ -87,10 +89,11 @@ body main form input:focus {
   box-shadow: rgba(43, 99, 167, 0.481) 0px 5px 15px;
   border-color: #2980b9;
 }
-body main form input[type=number]::-webkit-inner-spin-button, body main form input[type=number]::-webkit-outer-spin-button {
+body main form input[type='number']::-webkit-inner-spin-button,
+body main form input[type='number']::-webkit-outer-spin-button {
   -webkit-appearance: none;
 }
 body main p {
   margin-top: 7rem;
   font-size: 3rem;
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */
