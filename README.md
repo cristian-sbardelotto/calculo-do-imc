@@ -25,7 +25,7 @@ Um site criado para calcular o IMC do usuário, usando tecnologias básicas de F
 
 ## 🖥️ Deploy
 
-Para checar o deploy, clique [neste link](https://cristian-sbardelotto.github.io/calculo-do-imc/).
+Para checar o deploy, clique [neste link](https://calculo-do-imc.vercel.app).
 
 <br />
 
