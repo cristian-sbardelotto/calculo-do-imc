@@ -9,20 +9,22 @@ const calcImc = () => {
   let weight = weightInput.value;
 
   const imc = (weight / heightSquared).toFixed(3);
-  
-  if (nameInput.value.length == 0 || heightInput.value.length == 0 || weightInput.value.length == 0) {
+
+  if (
+    nameInput.value.length == 0 ||
+    heightInput.value.length == 0 ||
+    weightInput.value.length == 0
+  ) {
     alert('[ERRO] Preencha todos os dados antes de calcular!');
-  }
-   else if (nameInput.value.length > 20) {
+  } else if (nameInput.value.length > 20) {
     alert('[ERRO] O seu nome excedeu a quantidade máxima de caracteres!');
-  }
-   else if (Number(heightInput.value) < 0) {
-    alert('[ERRO] A sua altura é menor que zero😂? Cheque o campo de "altura"!');
-  }
-   else if (Number(weight.value) < 0) {
+  } else if (Number(heightInput.value) < 0) {
+    alert(
+      '[ERRO] A sua altura é menor que zero😂? Cheque o campo de "altura"!'
+    );
+  } else if (Number(weight.value) < 0) {
     alert('[ERRO] O seu peso é menor que zero😂? Cheque o campo de "peso"!');
-  }
-   else {
+  } else {
     main.innerHTML = `
       <p class="result" style="margin: 0 0 2rem 0;">
         Olá ${nameInput.value}, o seu Índice de Massa Corporal (IMC) é de ${imc}
